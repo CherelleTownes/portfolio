@@ -2,7 +2,7 @@ import React from 'react';
 
 import GlobalStyle from './Components/shared/GlobalStyle';
 import Header from './Components/Header';
-
+import Intro from './Components/Intro';
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     <>
     <GlobalStyle />
       <Header />  
+      <Intro></Intro>
       
       </>
   );
