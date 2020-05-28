@@ -4,6 +4,7 @@ import GlobalStyle from './Components/shared/GlobalStyle';
 import Header from './Components/Header';
 import Intro from './Components/Intro';
 import About from './Components/About';
+import Featured from './Components/Featured';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />  
       <Intro />
       <About />
+      <Featured />
 
       
       </>

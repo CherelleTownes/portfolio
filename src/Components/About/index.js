@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PortfolioImage from '../../assets/images/portfolio-pic.jpg'
+import PortfolioImage from '../../assets/images/portfolio-pic.webp'
 
 
 

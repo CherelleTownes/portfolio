@@ -63,7 +63,7 @@ export default function Header() {
         <NavLink to="about" spy={true} smooth={true} offset={-165} duration={700}>
           About
           </NavLink>
-        <NavLink to="projects" spy={true} smooth={true} offset={-171} duration={500}>
+        <NavLink to="projects" spy={true} smooth={true} offset={180} duration={700}>
           Projects
           </NavLink>
         <NavLink to="contact" spy={true} smooth={true} offset={-80} duration={700}>
