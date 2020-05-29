@@ -78,7 +78,7 @@ export default function Projects() {
 
       <ProjectContainer>
         <div>
-        <ProjectImage href="https://vivid2020.netlify.app/"><img src={vivid} alt="Vivid" /></ProjectImage>
+        <ProjectImage href="https://vivid2020.netlify.app/" target="_blank"><img src={vivid} alt="Vivid" /></ProjectImage>
         </div>
         <div>
           <Title>Vivid</Title>
@@ -106,7 +106,7 @@ export default function Projects() {
         </TechListCathay>
         </div>
         <div>
-        <ProjectImage href="https://cathay-22.netlify.app/"><img src={cathay} alt="Filthy Fashion" /></ProjectImage>
+        <ProjectImage href="https://cathay-22.netlify.app/" target="_blank"><img src={cathay} alt="Filthy Fashion" /></ProjectImage>
         </div>
         </ProjectContainer>
         
@@ -114,7 +114,7 @@ export default function Projects() {
       
       <ProjectContainer>
         <div>
-        <ProjectImage href="http://hytech.surge.sh/"><img src={hytech} alt="Hytech" /></ProjectImage>
+        <ProjectImage href="http://hytech.surge.sh/" target="_blank"><img src={hytech} alt="Hytech" /></ProjectImage>
         </div>
         <div>
           <Title>HyTech</Title>

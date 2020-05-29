@@ -10,6 +10,8 @@ const StyledHeader = styled.header`
     height: 100px;
     width: 100%;
     padding-top: 20px;
+    position: fixed;
+   background-color: #0D0D0D;
 `;
 
 const Nav = styled.nav`

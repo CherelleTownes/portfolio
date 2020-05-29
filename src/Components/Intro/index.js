@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledIntro = styled.section`
-   height: 500px;
+   height: 600px;
    width: 100%;
    padding-left: 50px;
-   padding-top: 100px;
+   padding-top: 200px;
+  
 `;
 
 

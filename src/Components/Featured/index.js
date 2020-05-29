@@ -43,7 +43,15 @@ const Title = styled.h3`
   justify-content: flex-end;
   padding-right: 60px;
   padding-bottom: 30px;
-  
+`;
+
+const FeaturedText = styled.p`
+  font-size: 14px;
+color: #F26A4B;
+display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+  padding-bottom: 10px;
 `;
 
 
@@ -75,10 +83,11 @@ export default function Projects() {
       <Label>Projects</Label>
       <FeaturedContainer>
       <FeaturedImageContainer >
-          <FeaturedImage href="http://filthyfashion.surge.sh/"><img src={FilthyFashion} alt="Filthy Fashion" />
+          <FeaturedImage href="http://filthyfashion.surge.sh/" target="_blank"><img src={FilthyFashion} alt="Filthy Fashion" />
           </FeaturedImage>     
       </FeaturedImageContainer>
-      <FeaturedDescriptionContainer>
+        <FeaturedDescriptionContainer>
+          <FeaturedText>Featured Project</FeaturedText>
         <Title>Filthy Fashion</Title>
           <DescriptionText>Filthy Fashion is a unique fashion web application where users can create an account and build a clothing item. A user has the option of selecting a dress, skirt, shirt, or bottoms. Once the user selects an item, the user can pick a color they would like the item to be and provide a detailed description of how they would like the item designed. This fashion forward web application gives the user freedom to build clothing items to their hearts desires.</DescriptionText>
           <TechList>

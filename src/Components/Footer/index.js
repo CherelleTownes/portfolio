@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import GitHubImg from '../../assets/images/GitHub.png';
 
 const StyledFooter = styled.section`
   width: 100%;
@@ -14,12 +15,20 @@ const FooterText = styled.p`
   font-family: 'Raleway', sans-serif;
   text-align: center;
   padding-top: 10px;
-  padding-right: 50px;
+  padding-right: 15px;
+`;
+
+const GitHub = styled.img`
+    display: inline-block;
+    color:white;
+    float: right;
+    padding-right: 50px;
 `;
 
 export default function Footer() {
   return (
     <StyledFooter>
+      <a href="https://github.com/CherelleTownes" target="_blank"><GitHub src={GitHubImg} alt="GitHub" /></a>
       <FooterText>Designed and Created by Cherelle Townes</FooterText>
     </StyledFooter>
 
