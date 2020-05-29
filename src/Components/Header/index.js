@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from "react-router-dom";
 import * as Scroll from 'react-scroll';
 import logo from '../../assets/images/Logo.png';
+import resume from '../../assets/resume/resume.pdf';
 
 
 const StyledHeader = styled.header`
@@ -60,16 +61,16 @@ export default function Header() {
     <StyledHeader>
       <Nav>
         <Logo to exact="/"><img src={logo} alt="Logo"></img></Logo>
-        <NavLink to="about" spy={true} smooth={true} offset={-165} duration={700}>
+        <NavLink to="about" spy={true} smooth={true} offset={90} duration={700}>
           About
           </NavLink>
-        <NavLink to="projects" spy={true} smooth={true} offset={180} duration={700}>
+        <NavLink to="projects" spy={true} smooth={true} offset={140} duration={700}>
           Projects
           </NavLink>
-        <NavLink to="contact" spy={true} smooth={true} offset={-80} duration={700}>
+        <NavLink to="contact" spy={true} smooth={true} offset={240} duration={900}>
           Contact
         </NavLink>
-        <Button>Resume</Button>
+        <a href = {resume} target = "_blank"><Button>Resume</Button></a>
       </Nav>
     </StyledHeader>
     

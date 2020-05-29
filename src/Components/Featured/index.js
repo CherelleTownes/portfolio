@@ -5,7 +5,7 @@ import FilthyFashion from '../../assets/images/filthyfashion-img.png';
 
 
 const StyledFeatured = styled.section`
- padding-top: 200px;
+ padding-top: 150px;
 `;
 
 const FeaturedContainer = styled.div`
@@ -17,7 +17,7 @@ const FeaturedContainer = styled.div`
 `;
 
 const Label = styled.h1`
-  font-size: 42px;
+  font-size: 32px;
   color: #F2F2F2;
   font-family: 'Raleway', sans-serif;
   text-align: center;
@@ -37,7 +37,7 @@ const FeaturedDescriptionContainer = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 20px;
+  font-size: 18px;
   color: #F26A4B;
   display: flex;
   justify-content: flex-end;
