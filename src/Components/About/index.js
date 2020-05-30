@@ -9,6 +9,11 @@ const StyledAbout = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 100px;
+  @media (max-width: 425px) {
+    padding-top: 150px;
+    display: grid;
+  grid-template-columns: 25% 75%;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -21,6 +26,10 @@ const Description = styled.div`
   width: 90%;
   text-align: center;
   line-height: 35px;
+  @media (max-width: 425px) {
+    width: 40%;
+  line-height: 25px;
+  }
 `;
 
 
@@ -28,7 +37,9 @@ const Title = styled.h1`
     font-size: 32px;
     color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
-
+ @media (max-width: 425px) {
+  font-size: 26px;
+ }
 `;
 
 const Vector = styled.hr`
@@ -42,6 +53,9 @@ const AboutText = styled.p`
   font-family: 'Raleway', sans-serif;
   color: #F2F2F2;
   margin-top: -20px;
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
 `;
 
 const SkillsText = styled.p`
@@ -50,6 +64,9 @@ const SkillsText = styled.p`
   font-weight: 500;
   color: #F2F2F2;
   padding-top: 15px;
+  @media (max-width: 425px) {
+  font-size: 14px;
+  }
 `;
 
 const List = styled.ul`
@@ -68,6 +85,9 @@ const ListItem = styled.li`
     color: #F23005;
     padding-right: 3px;
   }
+    @media (max-width: 425px) {
+    font-size: 12px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -78,7 +98,14 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   width: 100%;
   border-radius: 10em;
+  @media (max-width: 425px) {
+    width: 50%;
+  }
 `;
+
+
+
+
 export default function About() {
   return (
     <StyledAbout id="about" name="about">

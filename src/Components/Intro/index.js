@@ -6,6 +6,11 @@ const StyledIntro = styled.section`
    width: 100%;
    padding-left: 50px;
    padding-top: 200px;
+    @media (max-width: 425px) {
+      padding-top: 200px;
+      padding-left: 20px;
+      height: 500px;
+    }
   
 `;
 
@@ -14,6 +19,9 @@ const TopText = styled.h3`
    font-size: 18px;
    font-weight: 500;
     color: #F26A4B;
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
 `;
 
 const NameText = styled.h1`
@@ -22,6 +30,9 @@ const NameText = styled.h1`
     color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
     padding-top: 30px;
+    @media (max-width: 425px) {
+      font-size: 48px;
+    }
 `;
 
 const BottomText = styled.h1`
@@ -30,6 +41,9 @@ const BottomText = styled.h1`
     color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
     padding-top: 10px;
+    @media (max-width: 425px) {
+      font-size: 17px;
+    }
 `;
 
 const IntroText = styled.p`
@@ -39,6 +53,10 @@ width: 60%;
   font-family: 'Raleway', sans-serif;
   line-height: 30px;
   padding-top: 30px;
+  @media (max-width: 425px) {
+    width: 100%;
+    font-size: 16px;
+  }
 `;
 
 

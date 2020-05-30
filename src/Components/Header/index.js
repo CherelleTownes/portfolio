@@ -11,7 +11,10 @@ const StyledHeader = styled.header`
     width: 100%;
     padding-top: 20px;
     position: fixed;
-   background-color: #0D0D0D;
+   background-color: #0D0D0D;  
+   @media (max-width: 425px) {
+    padding-top: 30px;
+   }
 `;
 
 const Nav = styled.nav`
@@ -20,11 +23,19 @@ const Nav = styled.nav`
   align-items: center;
   padding-left: 65px;
   padding-right: 30px;
+  @media (max-width: 425px) {
+    display: flex;
+    flex-direction:row;
+    padding-left: 15px;
+  }
 
 `;
 
 const Logo = styled(Link)`
   img {height: 55px}
+  @media (max-width: 425px) {
+    img {height: 40px}
+  }
 `;
 
 const NavLink = styled(Scroll.Link)`
@@ -32,6 +43,11 @@ const NavLink = styled(Scroll.Link)`
   text-decoration: none;
   color: #F26A4B;
   cursor: pointer;
+    @media (max-width: 425px) {
+      font-size: 14px;
+      padding-left: 20px;
+     
+    }
 `;
 
 const Button = styled.button`
@@ -54,7 +70,8 @@ const Button = styled.button`
   @media (max-width: 425px) {
     padding: 0px 16px;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 7px;
+    margin-left: 25px;
   }
 `;
 
@@ -63,10 +80,10 @@ export default function Header() {
     <StyledHeader>
       <Nav>
         <Logo to exact="/"><img src={logo} alt="Logo"></img></Logo>
-        <NavLink to="about" spy={true} smooth={true} offset={90} duration={700}>
+        <NavLink to="about" spy={true} smooth={true} offset={-70} duration={700}>
           About
           </NavLink>
-        <NavLink to="projects" spy={true} smooth={true} offset={140} duration={700}>
+        <NavLink to="projects" spy={true} smooth={true} offset={10} duration={700}>
           Projects
           </NavLink>
         <NavLink to="contact" spy={true} smooth={true} offset={240} duration={900}>
