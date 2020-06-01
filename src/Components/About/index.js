@@ -10,9 +10,9 @@ const StyledAbout = styled.section`
   grid-template-columns: 1fr 1fr;
   padding-top: 100px;
   @media (max-width: 425px) {
-    padding-top: 150px;
+    padding-top: 80px;
     display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 1.5fr 1fr;
   }
 `;
 
@@ -20,14 +20,19 @@ const TextContainer = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr 7fr;
   justify-items: center; 
+  @media (max-width: 425px) {
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    justify-items: start;
+    padding-left: 10px;
+  }
 `;
 
 const Description = styled.div`
   width: 90%;
-  text-align: center;
+  /* text-align: center; */
   line-height: 35px;
   @media (max-width: 425px) {
-    width: 40%;
   line-height: 25px;
   }
 `;
@@ -38,7 +43,7 @@ const Title = styled.h1`
     color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
  @media (max-width: 425px) {
-  font-size: 26px;
+  font-size: 14px;
  }
 `;
 
@@ -46,6 +51,10 @@ const Vector = styled.hr`
   width: 450px;
   height: 1px;
   border: solid 1px #F26A4B;
+  @media (max-width: 425px) {
+    width: 100px;
+    margin-left: 0;
+  }
 `;
 
 const AboutText = styled.p`
@@ -54,7 +63,9 @@ const AboutText = styled.p`
   color: #F2F2F2;
   margin-top: -20px;
   @media (max-width: 425px) {
-    font-size: 14px;
+    font-size: 8px;
+  
+    
   }
 `;
 
@@ -65,7 +76,7 @@ const SkillsText = styled.p`
   color: #F2F2F2;
   padding-top: 15px;
   @media (max-width: 425px) {
-  font-size: 14px;
+  font-size: 8px;
   }
 `;
 
@@ -73,6 +84,9 @@ const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 100px;
+  @media (max-width: 425px) {
+    grid-column-gap: 10px;
+  }
 
 `;
 
@@ -86,20 +100,23 @@ const ListItem = styled.li`
     padding-right: 3px;
   }
     @media (max-width: 425px) {
-    font-size: 12px;
+    font-size: 8px;
   }
 `;
 
 const ImageContainer = styled.div`
   width: 96%;
   align-self: center;
+  @media (max-width: 425px) {
+    align-self: start;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   border-radius: 10em;
   @media (max-width: 425px) {
-    width: 50%;
+   margin-top: 75px;
   }
 `;
 
