@@ -14,6 +14,9 @@ const FeaturedContainer = styled.div`
   padding-top: 90px;
   justify-items: center;
   align-items: center;
+  @media (max-width: 425px) {
+    padding-left: 5px;
+  }
 `;
 
 const Label = styled.h1`
@@ -21,6 +24,9 @@ const Label = styled.h1`
   color: #F2F2F2;
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
 `;
 
 const FeaturedImageContainer = styled.div`
@@ -29,11 +35,19 @@ const FeaturedImageContainer = styled.div`
 
 
 const FeaturedImage = styled.a`
+  @media (max-width: 425px) {
+     img {width: 100%;}
+  }
+
 `;
 
 const FeaturedDescriptionContainer = styled.div`
   margin-top: -200px;
   width: 92%;
+  @media (max-width: 425px) {
+    margin-top: 0;
+  
+  }
 `;
 
 const Title = styled.h3`
@@ -43,6 +57,11 @@ const Title = styled.h3`
   justify-content: flex-end;
   padding-right: 60px;
   padding-bottom: 30px;
+  @media (max-width: 425px) {
+    font-size: 8px;
+    padding-right: 4px;
+  padding-bottom: 10px;
+  }
 `;
 
 const FeaturedText = styled.p`
@@ -52,6 +71,11 @@ display: flex;
   justify-content: flex-end;
   padding-right: 60px;
   padding-bottom: 10px;
+  @media (max-width: 425px) {
+    font-size: 8px;
+    padding-right: 4px;
+  padding-bottom: 10px;
+  }
 `;
 
 
@@ -60,6 +84,12 @@ const DescriptionText = styled.p`
   color: #F2F2F2;
   font-family: 'Raleway', sans-serif;
   line-height: 35px;
+  @media (max-width: 425px) {
+    font-size: 10px;
+    line-height: 16px;
+    text-align: justify;
+  }
+  
 `;
 
 
@@ -68,6 +98,11 @@ const TechList = styled.ul`
   justify-content: flex-end;
   padding-right: 30px;
   padding-top: 20px;
+  @media (max-width: 425px) {
+    padding-right: 0px;
+  padding-top: 10px;
+  }
+  
 `;
 
 const TechItem = styled.li`
@@ -75,6 +110,10 @@ font-size: 14px;
 color: #F26A4B;
 display: inline;
 padding-right: 20px;
+@media (max-width: 425px) {
+    font-size: 8px;
+    padding-right: 4px;
+  }
 `;
 
 export default function Projects() {

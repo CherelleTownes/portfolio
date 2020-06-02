@@ -130,7 +130,7 @@ export default function About() {
         <Title>About Me</Title>
         <Vector />
         <Description>
-          <AboutText>Hello! I'm Cherelle, a United States Air Force veteran turned Software Engineer based out of New York City.<br /> For over 13-years, I trained Aerospace medical teams on how to use complex technical systems. Now, as a Software Engineer, I take the same systematic approach in breaking down multifaceted software issues into intuitive solutions. I seek the opportunity to merge my experience in management and Full-Stack Development to work collaboratively with cross-functional teams to build forward-thinking technology products that help individuals and enterprise organizations maximize efficiency.
+          <AboutText>Hello! I'm Cherelle, a United States Air Force veteran turned Software Engineer based out of New York City. For over 13-years, I trained Aerospace medical teams on how to use complex technical systems. Now, as a Software Engineer, I take the same systematic approach in breaking down multifaceted software issues into intuitive solutions. I seek the opportunity to merge my experience in management and Full-Stack Development to work collaboratively with cross-functional teams to build forward-thinking technology products that help individuals and enterprise organizations maximize efficiency.
         </AboutText>
           <SkillsText>Here are a few of my skills and technologies I have been working with:</SkillsText>
         </Description>
