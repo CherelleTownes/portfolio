@@ -23,6 +23,10 @@ const GitHub = styled.img`
     color:white;
     float: right;
     padding-right: 50px;
+    @media (max-width: 425px) {
+      height: 28px;
+      padding-top: 5px;
+    }
 `;
 
 export default function Footer() {

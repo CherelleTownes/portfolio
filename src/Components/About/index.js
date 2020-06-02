@@ -43,7 +43,7 @@ const Title = styled.h1`
     color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
  @media (max-width: 425px) {
-  font-size: 14px;
+  font-size: 16px;
  }
 `;
 
@@ -52,8 +52,9 @@ const Vector = styled.hr`
   height: 1px;
   border: solid 1px #F26A4B;
   @media (max-width: 425px) {
-    width: 100px;
+    width: 150px;
     margin-left: 0;
+    margin-top: -10px;
   }
 `;
 
@@ -63,7 +64,8 @@ const AboutText = styled.p`
   color: #F2F2F2;
   margin-top: -20px;
   @media (max-width: 425px) {
-    font-size: 8px;
+    font-size: 10px;
+    line-height: 12px;
   
     
   }
@@ -76,7 +78,8 @@ const SkillsText = styled.p`
   color: #F2F2F2;
   padding-top: 15px;
   @media (max-width: 425px) {
-  font-size: 8px;
+  font-size: 10px;
+  line-height: 12px;
   }
 `;
 
@@ -86,6 +89,7 @@ const List = styled.ul`
   grid-column-gap: 100px;
   @media (max-width: 425px) {
     grid-column-gap: 10px;
+    margin-top: -10px;
   }
 
 `;
@@ -100,7 +104,8 @@ const ListItem = styled.li`
     padding-right: 3px;
   }
     @media (max-width: 425px) {
-    font-size: 8px;
+    font-size: 6px;
+   
   }
 `;
 
@@ -116,7 +121,9 @@ const Image = styled.img`
   width: 100%;
   border-radius: 10em;
   @media (max-width: 425px) {
-   margin-top: 75px;
+   margin-top: 60px;
+   width: 185px;
+   margin-right: 10px;
   }
 `;
 

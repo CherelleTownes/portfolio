@@ -34,7 +34,7 @@ const Nav = styled.nav`
 const Logo = styled(Link)`
   img {height: 55px}
   @media (max-width: 425px) {
-    img {height: 40px}
+    img {height: 35px}
   }
 `;
 

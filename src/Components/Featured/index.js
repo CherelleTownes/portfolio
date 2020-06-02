@@ -19,6 +19,7 @@ const FeaturedContainer = styled.div`
   align-items: center;
   @media (max-width: 425px) {
     padding-left: 5px;
+    padding-top: 40px;
   }
 `;
 
@@ -28,7 +29,7 @@ const Label = styled.h1`
   font-family: 'Raleway', sans-serif;
   text-align: center;
   @media (max-width: 425px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 

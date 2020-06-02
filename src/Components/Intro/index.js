@@ -11,7 +11,6 @@ const StyledIntro = styled.section`
       padding-left: 20px;
       height: 500px;
     }
-  
 `;
 
 
