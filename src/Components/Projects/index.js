@@ -8,7 +8,7 @@ import hytech from '../../assets/images/hytech-screenshot.png';
 
 
 const StyledProjects = styled.section`
-  padding-top: 150px;
+  padding-top: 75px;
 `;
 
 const ProjectContainer = styled.div`
@@ -19,7 +19,7 @@ const ProjectContainer = styled.div`
   padding:0 20px 150px 20px;
   @media (max-width: 425px) {
     grid-column-gap: 10px;
-    padding: 0 10px 100px 10px;
+    padding: 0 10px 75px 10px;
   }
 `;
 
@@ -70,7 +70,7 @@ const DescriptionText = styled.p`
   @media (max-width: 425px) {
     font-size: 10px;
     text-align: justify;
-    line-height: 16px;
+    line-height: 12px;
   }
 `;
 

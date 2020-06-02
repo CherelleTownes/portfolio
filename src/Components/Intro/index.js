@@ -7,8 +7,9 @@ const StyledIntro = styled.section`
    padding-left: 50px;
    padding-top: 200px;
     @media (max-width: 425px) {
-      padding-top: 200px;
-      padding-left: 20px;
+      padding-top: 175px;
+      padding-left: 10px;
+      padding-right: 10px;
       height: 500px;
     }
 `;
