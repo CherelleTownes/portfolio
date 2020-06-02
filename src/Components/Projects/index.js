@@ -17,11 +17,18 @@ const ProjectContainer = styled.div`
   align-content: center;
   grid-column-gap: 25px;
   padding:0 20px 150px 20px;
+  @media (max-width: 425px) {
+    grid-column-gap: 10px;
+    padding: 0 10px 100px 10px;
+  }
 `;
 
 const ProjectImage = styled.a`
   img{ width: 100%;
       border-radius: 10px;
+      @media (max-width: 425px) {
+        margin-top: 20px;
+      }
   };
 `;
 
@@ -32,6 +39,12 @@ const Title = styled.h3`
   justify-content: flex-end;
   padding-right: 60px;
   padding-bottom: 30px; 
+  @media (max-width: 425px) {
+    font-size: 11px;
+    padding-right: 4px;
+  padding-bottom: 10px; 
+  }
+
 `;
 
 const TitleCathay = styled.h3`
@@ -41,6 +54,11 @@ const TitleCathay = styled.h3`
   color: #F26A4B;
   padding-right: 60px;
   padding-bottom: 30px;
+  @media (max-width: 425px) {
+    font-size: 11px;
+    padding-right: 4px;
+  padding-bottom: 10px; 
+  }
 `;
 
 
@@ -49,6 +67,11 @@ const DescriptionText = styled.p`
   color: #F2F2F2;
   font-family: 'Raleway', sans-serif;
   line-height: 35px;
+  @media (max-width: 425px) {
+    font-size: 10px;
+    text-align: justify;
+    line-height: 16px;
+  }
 `;
 
 const TechList = styled.ul`
@@ -56,6 +79,9 @@ const TechList = styled.ul`
   justify-content: flex-end;
   padding-right: 30px;
   padding-top: 20px;
+  @media (max-width: 425px) {
+    padding-right: 0;
+  }
 `;
 
 const TechListCathay = styled.ul`
@@ -70,6 +96,10 @@ font-size: 14px;
 color: #F26A4B;
 display: inline;
 padding-right: 20px;
+@media (max-width: 425px) {
+  font-size: 8px;
+  /* padding-right: 0; */
+}
 `;
 
 export default function Projects() {
@@ -114,11 +144,11 @@ export default function Projects() {
       
       <ProjectContainer>
         <div>
-        <ProjectImage href="http://hytech.surge.sh/" target="_blank"><img src={hytech} alt="Hytech" /></ProjectImage>
+        <ProjectImage href="http://hytech.surge.sh/" target="_blank"><img src={hytech} alt="Hytech"/></ProjectImage>
         </div>
         <div>
           <Title>HyTech</Title>
-        <DescriptionText>Full-Stack App Development. TechBlog community where users can provide tech input. CRUD on the backend using Express, Mongoose, and MongoDB</DescriptionText>
+        <DescriptionText>Full-Stack App Development. TechBlog community where users can provide tech input. CRUD on the backend using Express, Mongoose, and MongoDB.</DescriptionText>
         <TechList>
           <TechItem>Express</TechItem>
           <TechItem>MongoDB</TechItem>

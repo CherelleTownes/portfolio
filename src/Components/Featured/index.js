@@ -6,6 +6,9 @@ import FilthyFashion from '../../assets/images/filthyfashion-img.png';
 
 const StyledFeatured = styled.section`
  padding-top: 150px;
+ @media (max-width: 425px) {
+    padding-top: 100px;
+  }
 `;
 
 const FeaturedContainer = styled.div`
@@ -58,7 +61,7 @@ const Title = styled.h3`
   padding-right: 60px;
   padding-bottom: 30px;
   @media (max-width: 425px) {
-    font-size: 8px;
+    font-size: 10px;
     padding-right: 4px;
   padding-bottom: 10px;
   }

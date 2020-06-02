@@ -13,6 +13,10 @@ const Label = styled.h2`
   font-size: 32px;
   color:#F26A4B;
   padding-bottom: 40px;
+  @media (max-width: 425px) {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
 `;
 
 const ContactText = styled.p`
@@ -20,6 +24,10 @@ const ContactText = styled.p`
   color: #F2F2F2; 
   font-family: 'Raleway', sans-serif;
   padding-bottom: 20px;
+  @media (max-width: 425px) {
+    font-size: 12px;
+    padding-bottom: 0;
+  }
 `;
 
 const Button = styled.button`
