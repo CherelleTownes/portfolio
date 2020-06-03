@@ -1,5 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { rollIn } from 'react-animations';
+import { fadeInLeftBig } from 'react-animations';
+
+
+
+
+
+const rollAnimation = keyframes`${rollIn}`;
+const FadeInAnimation = keyframes`${ fadeInLeftBig}`;
 
 const StyledIntro = styled.section`
    height: 600px;
@@ -14,11 +23,11 @@ const StyledIntro = styled.section`
     }
 `;
 
-
 const TopText = styled.h3`
    font-size: 18px;
    font-weight: 500;
     color: #F26A4B;
+    animation: 2s ${rollAnimation};
     @media (max-width: 425px) {
       font-size: 14px;
     }
@@ -30,6 +39,7 @@ const NameText = styled.h1`
     color: #F2F2F2;
     font-family: 'Raleway', sans-serif;
     padding-top: 30px;
+    animation: 3s ${FadeInAnimation};
     @media (max-width: 425px) {
       font-size: 48px;
     }
