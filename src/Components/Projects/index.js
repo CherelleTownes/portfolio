@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
-import vivid from '../../assets/images/vivid-screenshot.png';
-import cathay from '../../assets/images/cathay-screenshot.jpg';
-import hytech from '../../assets/images/hytech-screenshot.png';
+
+import vivid from '../../assets/images/vivid-1440.png';
+import cathay from '../../assets/images/cathay-1440.jpg';
+import hytech from '../../assets/images/hytech-1440.png';
+import vividSmall from '../../assets/images/vivid-400.webp';
+import cathaySmall from '../../assets/images/cathay-400.webp';
+import hytechSmall from '../../assets/images/hytech-400.webp';
 
 
 
@@ -108,7 +112,12 @@ export default function Projects() {
 
       <ProjectContainer>
         <div>
-        <ProjectImage href="https://vivid2020.netlify.app/" target="_blank"><img src={vivid} alt="Vivid" /></ProjectImage>
+          <ProjectImage href="https://vivid2020.netlify.app/" target="_blank">
+            <img src={vivid}
+              srcSet={`${cathaySmall} 400w, ${hytech} 1440w`}
+              sizes= "(max-width: 425px) 400px, 1440px"
+              alt="Vivid" />
+          </ProjectImage>
         </div>
         <div>
           <Title>Vivid</Title>

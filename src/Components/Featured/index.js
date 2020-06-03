@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FilthyFashion from '../../assets/images/filthyfashion-img.png';
+import FilthyFashion from '../../assets/images/filthyfashion-1440.png';
 
 
 
