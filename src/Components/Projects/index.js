@@ -112,9 +112,9 @@ export default function Projects() {
 
       <ProjectContainer>
         <div>
-          <ProjectImage href="https://vivid2020.netlify.app/" target="_blank">
+          <ProjectImage href="https://vivid2020.netlify.app/" target="_blank" rel="noopener noreferrer">
             <img src={vivid}
-              srcSet={`${cathaySmall} 400w, ${hytech} 1440w`}
+              srcSet={`${vividSmall} 400w, ${vivid} 1440w`}
               sizes= "(max-width: 425px) 400px, 1440px"
               alt="Vivid" />
           </ProjectImage>
@@ -145,7 +145,12 @@ export default function Projects() {
         </TechListCathay>
         </div>
         <div>
-        <ProjectImage href="https://cathay-22.netlify.app/" target="_blank"><img src={cathay} alt="Filthy Fashion" /></ProjectImage>
+          <ProjectImage href="https://cathay-22.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src={cathay}
+              srcSet={`${cathaySmall} 400w, ${cathay} 1440w`}
+              sizes= "(max-width: 425px) 400px, 1440px"
+              alt="Filthy Fashion" />
+          </ProjectImage>
         </div>
         </ProjectContainer>
         
@@ -153,7 +158,12 @@ export default function Projects() {
       
       <ProjectContainer>
         <div>
-        <ProjectImage href="http://hytech.surge.sh/" target="_blank"><img src={hytech} alt="Hytech"/></ProjectImage>
+          <ProjectImage href="http://hytech.surge.sh/" target="_blank" rel="noopener noreferrer">
+            <img src={hytech}
+              srcSet={`${hytechSmall} 400w, ${hytech} 1440w`}
+              sizes= "(max-width: 425px) 400px, 1440px"
+              alt="Hytech" />
+          </ProjectImage>
         </div>
         <div>
           <Title>HyTech</Title>

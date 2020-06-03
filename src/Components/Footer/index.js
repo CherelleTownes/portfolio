@@ -32,7 +32,7 @@ const GitHub = styled.img`
 export default function Footer() {
   return (
     <StyledFooter>
-      <a href="https://github.com/CherelleTownes" target="_blank"><GitHub src={GitHubImg} alt="GitHub" /></a>
+      <a href="https://github.com/CherelleTownes" target="_blank" rel="noopener noreferrer"><GitHub src={GitHubImg} alt="GitHub" /></a>
       <FooterText>Designed and Created by Cherelle Townes</FooterText>
     </StyledFooter>
 

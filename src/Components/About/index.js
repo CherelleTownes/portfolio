@@ -154,7 +154,7 @@ export default function About() {
         </List>
       </TextContainer>
       <ImageContainer>
-        <Image src={PortfolioImage} />
+        <Image src={PortfolioImage} alt="Cherelle Townes" />
       </ImageContainer>
     </StyledAbout>
   )

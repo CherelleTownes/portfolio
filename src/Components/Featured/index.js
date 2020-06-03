@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import FilthyFashion from '../../assets/images/filthyfashion-1440.png';
-
+import FilthyFashionSmall from '../../assets/images/filthy-fashion-400.webp';
 
 
 const StyledFeatured = styled.section`
@@ -126,7 +126,11 @@ export default function Projects() {
       <Label>Projects</Label>
       <FeaturedContainer>
       <FeaturedImageContainer >
-          <FeaturedImage href="http://filthyfashion.surge.sh/" target="_blank"><img src={FilthyFashion} alt="Filthy Fashion" />
+          <FeaturedImage href="http://filthyfashion.surge.sh/" target="_blank" rel="noopener noreferrer">
+            <img src={FilthyFashion}
+              srcSet={`${FilthyFashionSmall} 400w, ${FilthyFashion} 1440w`}
+              sizes= "(max-width: 425px) 400px, 1440px"
+                alt = "Filthy Fashion" />
           </FeaturedImage>     
       </FeaturedImageContainer>
         <FeaturedDescriptionContainer>
