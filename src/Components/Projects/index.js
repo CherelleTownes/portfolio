@@ -8,6 +8,8 @@ import hytech from '../../assets/images/hytech-1440.png';
 import vividSmall from '../../assets/images/vivid-400.webp';
 import cathaySmall from '../../assets/images/cathay-400.webp';
 import hytechSmall from '../../assets/images/hytech-400.webp';
+import GitHubImg from '../../assets/images/GitHub.png';
+import ArrowImg from '../../assets/images/new-window.ico';
 
 
 
@@ -99,11 +101,63 @@ const TechItem = styled.li`
 font-size: 14px;
 color: #F26A4B;
 display: inline;
-padding-right: 20px;
+padding-right: 10px;
 @media (max-width: 425px) {
   font-size: 8px;
-  /* padding-right: 0; */
+  margin-bottom: 10px;
 }
+`;
+
+const GitHub = styled.img`
+    display: inline-block;
+    color:white;
+    float: right;
+    padding-right: 40px;
+    padding-top: 30px;
+    @media (max-width: 425px) {
+      height: 20px;
+      padding-top: 0;
+      padding-right: 20px;
+    }
+`;
+
+const Arrow = styled.img`
+    display: inline-block;
+    color:white;
+    float: right;
+    padding-right: 100px;
+    padding-top: 30px;
+    @media (max-width: 425px) {
+      height: 16px;
+      padding-top: 0;
+      padding-right: 20px;
+    }
+`;
+
+
+const CathayGitHub = styled.img`
+    display: inline-block;
+    color:white;
+    padding-right: 40px;
+    padding-top: 30px;
+    @media (max-width: 425px) {
+      height: 20px;
+      padding-top: 0;
+      padding-left: 10px;
+      padding-right: 20px;
+    }
+`;
+
+const CathayArrow = styled.img`
+    display: inline-block;
+    color:white;
+    padding-right: 100px;
+    padding-top: 30px;
+    @media (max-width: 425px) {
+      height: 16px;
+      padding-top: 0;
+      padding-right: 10px;
+    }
 `;
 
 export default function Projects() {
@@ -127,7 +181,9 @@ export default function Projects() {
           <TechItem>Ruby</TechItem>
           <TechItem>Ruby on Rails</TechItem>
           <TechItem>Rest API</TechItem>
-        </TechList>
+          </TechList>
+          <a href="https://vivid2020.netlify.app/" target="_blank" rel="noopener noreferrer"><Arrow src={ArrowImg} alt="Vivid" /></a>
+          <a href="https://github.com/CherelleTownes/Vivid" target="_blank" rel="noopener noreferrer"><GitHub src={GitHubImg} alt="Vivid GitHub" /></a>
         </div>
       </ProjectContainer>
 
@@ -135,14 +191,16 @@ export default function Projects() {
       <ProjectContainer>
       <div>
           <TitleCathay>Cathay-22</TitleCathay>
-          <DescriptionText>UXDI/SEI Collaboration. A redesign of an existing local restaurant website in NewYork City. Cathay-22 original restaurant website was created in 1999 using HTML only. As a team, we redesigned the website to make it more modern and user friendly using a one page React app.
+          <DescriptionText>Worked in tandem with UX design team in order to redesign an existing local restaurant website in New York City. Cathay-22 original restaurant website was created in 1999 using HTML only. As a team, we redesigned the website to make it more modern and user friendly using a one page React app.
            ​</DescriptionText>
         <TechListCathay>
           <TechItem>React</TechItem>
           <TechItem>CSS</TechItem>
           <TechItem>Styled Components</TechItem>
           <TechItem>HTML</TechItem>
-        </TechListCathay>
+          </TechListCathay>
+          <a href="https://github.com/CherelleTownes/cathay-22" target="_blank" rel="noopener noreferrer"><CathayGitHub src={GitHubImg} alt="Cathay-22 GitHub" /></a>
+          <a href="https://cathay-22.netlify.app/" target="_blank" rel="noopener noreferrer"><CathayArrow src={ArrowImg} alt="Cathay-22" /></a>
         </div>
         <div>
           <ProjectImage href="https://cathay-22.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -174,6 +232,8 @@ export default function Projects() {
           <TechItem>Mongoose</TechItem>
           <TechItem>React</TechItem>
           </TechList>
+          <a href="http://hytech.surge.sh/" target="_blank" rel="noopener noreferrer"><Arrow src={ArrowImg} alt="Hytech" /></a>
+          <a href="https://github.com/CherelleTownes/hytech-blog" target="_blank" rel="noopener noreferrer"><GitHub src={GitHubImg} alt="Hytech GitHub" /></a>
           </div>
       </ProjectContainer>
       

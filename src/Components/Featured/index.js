@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import FilthyFashion from '../../assets/images/filthyfashion-1440.png';
 import FilthyFashionSmall from '../../assets/images/filthy-fashion-400.webp';
+import GitHubImg from '../../assets/images/GitHub.png';
+import ArrowImg from '../../assets/images/new-window.ico';
 
 
 const StyledFeatured = styled.section`
@@ -117,7 +119,35 @@ padding-right: 20px;
 @media (max-width: 425px) {
     font-size: 8px;
     padding-right: 4px;
+    margin-bottom: 10px;
   }
+`;
+
+const GitHub = styled.img`
+    display: inline-block;
+    color:white;
+    float: right;
+    padding-right: 40px;
+    padding-top: 30px;
+    @media (max-width: 425px) {
+      height: 20px;
+      padding-top: 0;
+      padding-right: 20px;
+      
+    }
+`;
+
+const Arrow = styled.img`
+    display: inline-block;
+    color:white;
+    float: right;
+    padding-right: 100px;
+    padding-top: 30px;
+    @media (max-width: 425px) {
+      height: 16px;
+      padding-top: 0;
+      padding-right: 20px;
+    }
 `;
 
 export default function Projects() {
@@ -143,7 +173,8 @@ export default function Projects() {
             <TechItem>Ruby on Rails</TechItem>
             <TechItem>Rest API</TechItem>
           </TechList>
-        
+          <a href="http://filthyfashion.surge.sh/" target="_blank" rel="noopener noreferrer"><Arrow src={ArrowImg} alt="Filthy Fashion" /></a>
+          <a href="https://github.com/CherelleTownes/Filthy-Fashion" target="_blank" rel="noopener noreferrer"><GitHub src={GitHubImg} alt="Filthy Fashion GitHub" /></a>
       </FeaturedDescriptionContainer>
       </FeaturedContainer>
     </StyledFeatured>
