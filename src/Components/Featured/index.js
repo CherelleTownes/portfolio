@@ -130,9 +130,9 @@ const GitHub = styled.img`
     padding-right: 40px;
     padding-top: 30px;
     @media (max-width: 425px) {
-      height: 20px;
+      height: 12px;
       padding-top: 0;
-      padding-right: 20px;
+      padding-right: 10px;
       
     }
 `;
@@ -144,7 +144,7 @@ const Arrow = styled.img`
     padding-right: 100px;
     padding-top: 30px;
     @media (max-width: 425px) {
-      height: 16px;
+      height: 10px;
       padding-top: 0;
       padding-right: 20px;
     }
